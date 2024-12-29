@@ -94,21 +94,21 @@ function Deals() {
       <h1 className="text-xl font-bold mb-3">Today Deals</h1>
 
       <div className="flex flex-col mt-5 md:flex md:flex-row md:space-x-3">
-        {offers?.map((item, index) => (
-          <Link href={`/product/${item?.id}`}>
+        {offers?.map((item:any, index:any) => (
+          <Link key={item.id} href={`/product/${item?.id}`}>
           
-            <div className="p-2 bg-white cursor-pointer shadow-md flex flex-col space-y-2 items-center justify-center">
-              <img className="w-32 h-32 object-contain" src={item?.image} key={index} />
+            <div key={index} className="p-2 bg-white cursor-pointer shadow-md flex flex-col space-y-2 items-center justify-center">
+              <img className="w-32 h-32 object-contain" src={item?.image}  />
 
               <div>
                 <p>
-                  Upto key={index}{item?.offer}% {" "}
+                  Upto {item?.offer}% {" "}
                   <span className="text-rose-600 font-normal text-sm ml-1">
                     Deal of the day
                   </span>
                 </p>
 
-                <p className="truncate font-normal text-sm mt-1"> key={index}
+                <p className="truncate font-normal text-sm mt-1"> 
                   {item?.title.substring(0, 30)}
                 </p>
               </div>

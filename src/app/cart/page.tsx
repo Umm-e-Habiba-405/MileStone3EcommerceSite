@@ -42,7 +42,7 @@ function Cart() {
     {/* leftpart */}
     <h2 className='text-xl font-bold'>Your Shopping Cart</h2>
     {cart?.map((item:any,index:number)=>(
-        <div className='border rounded-md p-3 bg-white shadow-md flex flex-row space-x-4 my-4'>
+        <div key={index} className='border rounded-md p-3 bg-white shadow-md flex flex-row space-x-4 my-4'>
             <Image
                 width={80}
                 height={80}
