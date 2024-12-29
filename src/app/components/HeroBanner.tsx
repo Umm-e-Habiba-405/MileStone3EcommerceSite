@@ -1,3 +1,4 @@
+///* eslint-disable react/no-unescaped-entities */
 "use client"
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader

@@ -1,4 +1,4 @@
-
+///* eslint-disable react/no-unescaped-entities */
 import { createSlice } from "@reduxjs/toolkit";
 
 export const CartSlice= createSlice({

@@ -1,3 +1,4 @@
+///* eslint-disable react/no-unescaped-entities */
 "use client"
 import React from 'react'
 import Header from '../components/Header'
@@ -47,18 +48,18 @@ function Cart() {
                 height={80}
                 objectFit={"contain"}
                 src={item?.image}
-                alt={item?.description}
+                alt={item?.description} key={index}
               />
               <div className='flex-grow'>
                 <p className='text-sm line-clamp-2'>{item.title}</p>
-                <p className='text-xl font-semibold'>Price:Rs  {item?.price}</p>
+                <p className='text-xl font-semibold'>Price:Rs key={index}  {item?.price}</p>
                 {item.description?(
-                    <p className='text-md line-clamp-2 font-normal'>{item?.description}</p>
+                    <p className='text-md line-clamp-2 font-normal'> key={index} {item?.description}</p>
 
                 ):(
                     <div>
-                     <p className='text-sm line-clamp-2 font-normal'>Color: {item?.color}</p>
-                     <p className='text-sm line-clamp-2 font-normal'>Size: {item?.Size}</p>
+                     <p className='text-sm line-clamp-2 font-normal'>Color:key{index} {item?.color}</p>
+                     <p className='text-sm line-clamp-2 font-normal'>Size: key{index}{item?.Size}</p>
                     </div>
                 )}
                 <div className='flex flex-row mt-1 space-x-2'>

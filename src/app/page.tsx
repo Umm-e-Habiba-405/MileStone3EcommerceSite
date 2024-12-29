@@ -1,3 +1,4 @@
+///* eslint-disable react/no-unescaped-entities */
 "use client"
 import Header from "./components/Header";
 import HeroBanner from "./components/HeroBanner";

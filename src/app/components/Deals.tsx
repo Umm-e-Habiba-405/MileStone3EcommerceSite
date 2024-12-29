@@ -1,3 +1,4 @@
+///* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Link from "next/link";
@@ -97,17 +98,17 @@ function Deals() {
           <Link href={`/product/${item?.id}`}>
           
             <div className="p-2 bg-white cursor-pointer shadow-md flex flex-col space-y-2 items-center justify-center">
-              <img className="w-32 h-32 object-contain" src={item?.image} />
+              <img className="w-32 h-32 object-contain" src={item?.image} key={index} />
 
               <div>
                 <p>
-                  Upto {item?.offer}% {" "}
+                  Upto key={index}{item?.offer}% {" "}
                   <span className="text-rose-600 font-normal text-sm ml-1">
                     Deal of the day
                   </span>
                 </p>
 
-                <p className="truncate font-normal text-sm mt-1">
+                <p className="truncate font-normal text-sm mt-1"> key={index}
                   {item?.title.substring(0, 30)}
                 </p>
               </div>
