@@ -91,7 +91,7 @@ function Deals() {
  
   return (
     <div className="mt-4 mx-10 md:mt-40">
-      <h1 className="text-xl font-bold mb-3">Today's Deals</h1>
+      <h1 className="text-xl font-bold mb-3">Today Deals</h1>
 
       <div className="flex flex-col mt-5 md:flex md:flex-row md:space-x-3">
         {offers?.map((item, index) => (
